@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/slideshow.css"> 
+	</head>
+	<body>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<a href="https://www.w3schools.com"><img src="images/thumbs/bells.png" style="width:50%"></a>
+				<div class="text">Bells</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <a href="https://www.google.com"><img src="images/thumbs/present.png" style="width:50%"></a>
+			  <div class="text">Presents</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <a href="https://www.yahoo.com"><img src="images/thumbs/tree-deco.png" style="width:50%"></a>
+			  <div class="text">Christmas Tree with Decoration</div>
+			</div>
+
+
+			<div class="mySlides fade">
+			  <a href="https://www.yahoo.com"><img src="images/thumbs/wreath.png" style="width:50%"></a>
+			  <div class="text">Wreath</div>
+			</div>
+
+
+			<div class="mySlides fade">
+			  <a href="https://www.yahoo.com"><img src="images/thumbs/wreath2.png" style="width:50%"></a>
+			  <div class="text">Wreath 2!</div>
+			</div>
+
+
+			<div class="mySlides fade">
+			  <a href="https://www.yahoo.com"><img src="images/thumbs/x-mas.png" style="width:50%"></a>
+			  <div class="text">CHRISTMAS!!!</div>
+			</div>
+
+
+		</div>	
+	</body>
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+
+		  slides[slideIndex-1].style.display = "block";  
+		  setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+	</script>
+<html>
