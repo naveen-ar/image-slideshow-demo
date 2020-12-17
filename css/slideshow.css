@@ -1,6 +1,8 @@
 /* Slideshow container */
 .slideshow-container {
   max-width: fit-content;
+  /* Uncomment if you the above max-width doesn't work in IE 11+ */
+  /* display: table;  */ 
   position: absolute;
   margin: auto;
 }
@@ -9,11 +11,18 @@
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
+  -ms-animation-name: fade;
+  -ms-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@-ms-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
@@ -25,7 +34,7 @@
 
 .text
 {
-	width: 50%
+	width: 50%;
 	text-align: center;
 	position: absolute;
 }
